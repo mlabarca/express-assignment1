@@ -1,7 +1,7 @@
 const http = require('http');
 const express = require('express');
 
-const dishRouter = require('./routes/dishrouter');
+const dishRouter = require('./routes/dishRouter');
 
 
 const app = express();

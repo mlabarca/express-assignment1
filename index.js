@@ -2,10 +2,12 @@ const http = require('http');
 const express = require('express');
 
 const dishRouter = require('./routes/dishRouter');
+const promotionsRouter = require('./routes/promoRouter');
 
 
 const app = express();
 app.use('/dishes', dishRouter);
+app.use('/promotions', promotionsRouter);
 
 app.use((req, res, next) => {
   console.log(req.headers);

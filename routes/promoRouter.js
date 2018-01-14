@@ -35,7 +35,7 @@ promoRouter.route("/:promoId")
 })
 .post((req, res, next) => {
   res.statusCode = 403;
-  res.end('PUT operation not supported on /promotiones/:promoId');
+  res.end('PUT operation not supported on /promotions/:promoId');
 })
 .delete((req, res, next) => {
   res.end(`Deleting promotion id: ${req.params.promoId} !`);

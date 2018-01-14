@@ -3,11 +3,13 @@ const express = require('express');
 
 const dishRouter = require('./routes/dishRouter');
 const promotionsRouter = require('./routes/promoRouter');
+const leadersRouter = require('./routes/leaderRouter');
 
 
 const app = express();
 app.use('/dishes', dishRouter);
 app.use('/promotions', promotionsRouter);
+app.use('/leaders', leadersRouter);
 
 app.use((req, res, next) => {
   console.log(req.headers);
